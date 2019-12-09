@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * Longest Substring with K Distinct Characters (medium)
  * Given a string, find the length of the longest substring in it with no more than K distinct characters.
  */
 class A04LongestSubstringKDistinct {
@@ -40,3 +41,8 @@ class A04LongestSubstringKDistinct {
 		System.out.println("Length of the longest substring: " + A04LongestSubstringKDistinct.findLength("cbbebi", 3));
 	}
 }
+
+/*
+Time Complexity: O(N). The outer for loop runs for all characters and the inner while loop processes each character only once, therefore the time complexity of the algorithm will be O(N+N) which is asymptotically equivalent to O(N).
+Space Complexity: O(K), as we will be storing a maximum of ‘K+1’ characters in the HashMap.
+*/

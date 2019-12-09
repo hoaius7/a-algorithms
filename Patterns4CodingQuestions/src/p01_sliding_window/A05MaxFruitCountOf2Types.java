@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /*
+ * Fruits into Baskets (medium)
  * Given an array of characters where each character represents a fruit tree, you 
  * are given two baskets and your goal is to put maximum number of fruits in each 
  * basket. The only restriction is that each basket can have only one type of fruit.
@@ -37,3 +38,11 @@ class A05MaxFruitCountOf2Types {
 				+ A05MaxFruitCountOf2Types.findLength(new char[] { 'A', 'B', 'C', 'B', 'B', 'C' }));
 	}
 }
+
+/*
+Time Complexity: O(N). The outer for loop runs for all characters and the inner while loop processes each character only once, therefore the time complexity of the algorithm will be O(N+N)O(N+N) which is asymptotically equivalent to O(N)O(N).
+
+Space Complexity: O(1) as there can be a maximum of three types of fruits stored in the frequency map.
+
+Similar Problems: Longest Substring with at most 2 distinct characters
+*/

@@ -1,6 +1,7 @@
 package p01_sliding_window;
 
 /**
+ * Maximum Sum Subarray of Size K (easy)
  * Given an array of positive numbers and a positive number ‘k’, find the maximum sum of any contiguous subarray of size ‘k’.
  */
 class A02MaxSumOfSubarrayOfSizeK {
@@ -45,3 +46,8 @@ class A02MaxSumOfSubarrayOfSizeK {
 				+ A02MaxSumOfSubarrayOfSizeK.findMaxSumSubArray01(2, new int[] { 2, 3, 4, 1, 5 }));
 	}
 }
+
+/*
+Time Complexity: O(N).
+Space Complexity: O(1).
+*/
