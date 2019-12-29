@@ -1,4 +1,4 @@
-package l01_queue;
+package l01_queue_bfs;
 
 import java.util.LinkedList;
 import java.util.Queue;
